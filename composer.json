@@ -1,0 +1,24 @@
+{
+    "name": "jmwashuma/debtapp",
+    "authors": [
+        {
+            "name": "John Mwashuma",
+            "email": "john@live.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.1",
+        "vlucas/phpdotenv": "~1.1",
+        "illuminate/database": "5.1.*",
+        "altorouter/altorouter": "1.1.0",
+        "respect/validation": "^1.1",
+        "twig/twig": "~1.0",
+        "duncan3dc/blade": "2.2.*",
+        "cocur/slugify": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DebtIt\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+ <?php $__env->startSection('browsertitle'); ?> DebtIt! | Home <?php $__env->stopSection(); ?> <?php $__env->startSection('content'); ?>
+<div class="x_title">
+    <h2>All Debtors Accounts Information</h2>
+
+    <div class="clearfix"></div>
+</div>
+<div class="x_content">
+    <table id="datatable-buttons" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Account</th>
+                <th>Mobile No</th>
+                <th>Loan Amount</th>
+                <th>Loan Balance</th>
+                <th>Loan Issue Date</th>
+                <th>Loan Due Date</th>
+
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <?php foreach($debtors as $debtor): ?>
+            <tr>
+                <td><?php echo e($debtor->cust_name); ?></td>
+                <td><?php echo e($debtor->cust_id); ?></td>
+                <td><?php echo e($debtor->cust_acno); ?></td>
+                <td><?php echo e($debtor->cust_mobile_number); ?></td>
+                <td><?php echo e($debtor->loan_amount); ?></td>
+                <td><?php echo e($debtor->loan_balance); ?></td>
+                <td><?php echo e($debtor->loan_issue_date); ?></td>
+                <td><?php echo e($debtor->loan_due_date); ?></td>
+            </tr>
+            <?php endforeach; ?>
+
+
+
+        </tbody>
+    </table>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

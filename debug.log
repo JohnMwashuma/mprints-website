@@ -1,0 +1,6 @@
+[0511/151414.016:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Footper\settings.dat: Access is denied. (0x5)
+[0511/151414.045:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0511/151414.047:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Footper\settings.dat: Access is denied. (0x5)
+[0511/161657.259:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Footper\settings.dat: Access is denied. (0x5)
+[0511/161657.285:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0511/161657.287:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Footper\settings.dat: Access is denied. (0x5)
