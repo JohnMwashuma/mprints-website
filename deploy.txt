@@ -10,9 +10,9 @@ You will be promted for a password enter vagrant.
 5. Type: cd vagrant
 
 Now browse on the local vagrant directory in your machine and copy my project files inside that directory and replace the vagrant file created with the one on my project file.
-Then go back to the terminal and still on the vagrant directory type the folloing commands:
+Then go back to the terminal and still on the vagrant directory type the following commands:
 1. ls
-You should be ables to see all the project files.
+You should be able to see all the project files.
 2. composer dumpautoload -o
 
 Now you are good to go. Open your browser and navigate to http://localhost:8800/login.
