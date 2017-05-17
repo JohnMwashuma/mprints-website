@@ -1,4 +1,5 @@
 How to deploy this project on a linux machine:
+NB: Make sure you have internet connection.
 1. Install virtual box. https://www.virtualbox.org/wiki/Downloads
 2. Install Vagrant. https://www.vagrantup.com/downloads.html
 3. Open your terminal terminal run the folliwing commands
@@ -8,14 +9,26 @@ How to deploy this project on a linux machine:
 4. ssh -l vagrant -p 2222 localhost
 You will be promted for a password enter vagrant.
 5. Type: cd vagrant
+6. curl -sS https://getcomposer.org/installer | php
+7. sudo mv composer.phar /usr/local/bin/composer
+8. composer init
+Pakage name: jmwashuma/debtit
+Author: John Mwashuma <me@live.com>
+Minimum stability: (press enter)
+Package Type: (press enter)
+Licence: (press enter)
+1st question: no
+2nd question: no
+3rd question: yes
 
-Now browse on the local vagrant directory in your machine and copy my project files inside that directory and replace the vagrant file created with the one on my project file.
+Now browse on the local vagrant directory in your machine and copy my project files inside that directory and replace the vagrant file created earlier with the one on my project files.
 Then go back to the terminal and still on the vagrant directory type the following commands:
-1. ls
+1. composer update
+2. ls
 You should be able to see all the project files.
-2. composer dumpautoload -o
+3. composer dumpautoload -o
 
-Now you are good to go. Open your browser and navigate to http://localhost:8800/login.
-Their two account:
+Now you are good to go. Open your browser and navigate to http://localhost:8800/login. (Make sure you have internet connection to load bootstrap and jquery files).
+Their are two login accounts:
 Admin account: johnmwashuma.dev-001A Password: 6927mwashi
-Normal account: johnmwashuma.dev-001B Password: 6927mwashi
+Ordinary account: johnmwashuma.dev-001B Password: 6927mwashi
