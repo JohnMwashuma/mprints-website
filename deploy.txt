@@ -1,0 +1,21 @@
+How to deploy this project on a linux machine:
+1. Install virtual box. https://www.virtualbox.org/wiki/Downloads
+2. Install Vagrant. https://www.vagrantup.com/downloads.html
+3. Open your terminal terminal run the folliwing commands
+1. mkdir vagrant
+2. cd vagrant
+3. vagrant init tsawler/wafs; vagrant up --provider virtualbox
+4. ssh -l vagrant -p 2222 localhost
+You will be promted for a password enter vagrant.
+5. Type: cd vagrant
+
+Now browse on the local vagrant directory in your machine and copy the vagrant files and replace the vagrant file created with the one on my project file.
+Then go back to the terminal and still on the vagrant directory type the folloing commands:
+1. ls
+You should be ables to see all the project files.
+2. composer dumpautoload -o
+
+Now you are good to go. Open your browser and navigate to http://localhost:8800/login.
+Their two account:
+Admin account: johnmwashuma.dev-001A Password: 6927mwashi
+Normal account: johnmwashuma.dev-001B Password: 6927mwashi
