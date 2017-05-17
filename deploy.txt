@@ -9,7 +9,7 @@ How to deploy this project on a linux machine:
 You will be promted for a password enter vagrant.
 5. Type: cd vagrant
 
-Now browse on the local vagrant directory in your machine and copy the vagrant files and replace the vagrant file created with the one on my project file.
+Now browse on the local vagrant directory in your machine and copy my project files inside that directory and replace the vagrant file created with the one on my project file.
 Then go back to the terminal and still on the vagrant directory type the folloing commands:
 1. ls
 You should be ables to see all the project files.
